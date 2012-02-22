@@ -1,0 +1,156 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SideNails\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-02-21 11:55+0100\n"
+"PO-Revision-Date: 2012-02-21 12:26+0100\n"
+"Last-Translator: tranchesdunet <contact@tranchesdunet.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: E:\\wamp\\www\\backup-18012012\\wp-content\\plugins\\sidenails\n"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:16
+msgid "SideNails v0.0.4"
+msgstr "SideNails v0.0.4"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:19
+msgid "<b>SideNails</b> est un plugin qui vous permet d'afficher une liste des derniers articles de votre blog sous forme de vignettes, dans la side bar.<br />Pour cela, <b>SideNails</b> utilise les images attachés à votre article (vignette, mise en avant)."
+msgstr "<b>SideNails</b> est un plugin qui vous permet d'afficher une liste des derniers articles de votre blog sous forme de vignettes, dans la side bar.<br />Pour cela, <b>SideNails</b> utilise les images attachés à votre article (vignette, mise en avant)."
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:27
+msgid "Info & Support"
+msgstr "Info & Support"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:30
+msgid "<b>SideNails</b> est un plugin développé par <a href='http://www.tranchesdunet.com/'>Jean-Marc BIANCA</a>"
+msgstr "<b>SideNails</b> est un plugin développé par <a href='http://www.tranchesdunet.com/'>Jean-Marc BIANCA</a>"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:32
+msgid "Support"
+msgstr "Support"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:40
+msgid "Afficher un lien 'Powered by SideNails' en bas du Widget"
+msgstr "Afficher un lien 'Powered by SideNails' en bas du Widget"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:42
+msgid "Idée originale : <a href='http://www.tuxboard.com/'>Alexandre VAL</a>"
+msgstr "Idée originale : <a href='http://www.tuxboard.com/'>Alexandre VAL</a>"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:52
+msgid "Images utilisées pour les vignettes"
+msgstr "Images utilisées pour les vignettes"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:55
+msgid "Par défaut, <b>SideNails</b> utilise la miniature de la 1ere image attachée à l'article, classé par '<i>Ordre du menu</i>' dans la galerie d''image (voir l''image ci-dessous)"
+msgstr "Par défaut, <b>SideNails</b> utilise la miniature de la 1ere image attachée à l'article, classé par '<i>Ordre du menu</i>' dans la galerie d''image (voir l''image ci-dessous)"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:59
+msgid "Sélectionner la source des vignettes :"
+msgstr "Sélectionner la source des vignettes :"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:67
+msgid "1ere image attachée à l'article"
+msgstr "1ere image attachée à l'article"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:68
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:93
+msgid "Taille par défaut : "
+msgstr "Taille par défaut : "
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:76
+msgid "Image mise en avant"
+msgstr "Image mise en avant"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:83
+msgid "URL de l'image dans un Custom Field"
+msgstr "URL de l'image dans un Custom Field"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:84
+msgid "Nom du Custom Field "
+msgstr "Nom du Custom Field "
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:92
+msgid "Image provenant d'une NextGen Gallery incluse dans l'article"
+msgstr "Image provenant d'une NextGen Gallery incluse dans l'article"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:101
+msgid "N'afficher que des articles avec images"
+msgstr "N'afficher que des articles avec images"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:109
+msgid "Taille des vignettes"
+msgstr "Taille des vignettes"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:113
+msgid "La taille des vignettes est définie automatiquement :<br />- par vos réglages dans Wordpress pour les vignettes attachées à l'article et les images mise en avant, <br />- par vos réglages dans NextGen Gallery pour les vignettes de NextGen Gallery.<br />- les images venant de Custom Fields n'ont pas de taille par défaut.<br />Toutefois, vous pouvez modifier ici la taille des vignettes."
+msgstr "La taille des vignettes est définie automatiquement :<br />- par vos réglages dans Wordpress pour les vignettes attachées à l'article et les images mise en avant, <br />- par vos réglages dans NextGen Gallery pour les vignettes de NextGen Gallery.<br />- les images venant de Custom Fields n'ont pas de taille par défaut.<br />Toutefois, vous pouvez modifier ici la taille des vignettes."
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:114
+msgid "Attention, ces dimensions seront appliquées pour toutes les vignettes du plugin SideNails"
+msgstr "Attention, ces dimensions seront appliquées pour toutes les vignettes du plugin SideNails"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:116
+msgid "Largeur "
+msgstr "Largeur "
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:117
+msgid "Hauteur "
+msgstr "Hauteur "
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:124
+msgid "YARPP : Yet Another Related Post Plugin"
+msgstr "YARPP : Yet Another Related Post Plugin"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:127
+msgid "En bonus, si vous utilisez le plugin YARPP, vous avez dans le répertoire du plugin <b>SideNails</b> un template pour ce plugin, afin d'afficher des images suivant le même principe que le Widget : yarpp-template-sidenails.php <br />Les réglages que vous effectuez sur cette page (source, taille des vignettes) sont valables également pour ce template.<br />Pour pouvoir utiliser ce template, vous devez recopier le fichier dans le repertoire de votre thème (et avoir <b>SideNails</b> activé, même si vous n'utilisez pas ses Widgets).<br />Il suffit ensuite de sélectionner ce template dans les réglages de YARPP."
+msgstr "En bonus, si vous utilisez le plugin YARPP, vous avez dans le répertoire du plugin <b>SideNails</b> un template pour ce plugin, afin d'afficher des images suivant le même principe que le Widget : yarpp-template-sidenails.php <br />Les réglages que vous effectuez sur cette page (source, taille des vignettes) sont valables également pour ce template.<br />Pour pouvoir utiliser ce template, vous devez recopier le fichier dans le repertoire de votre thème (et avoir <b>SideNails</b> activé, même si vous n'utilisez pas ses Widgets).<br />Il suffit ensuite de sélectionner ce template dans les réglages de YARPP."
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:133
+msgid "TODO"
+msgstr "TODO"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/admin_settings.php:145
+msgid "Mettre à jour"
+msgstr "Mettre à jour"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/sidenails.php:32
+msgid "Afficher les derniers articles sous forme de vignettes dans un widget"
+msgstr "Afficher les derniers articles sous forme de vignettes dans un widget"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/sidenails.php:50
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/sidenails.php:163
+msgid "Derniers articles"
+msgstr "Derniers articles"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/sidenails.php:123
+msgid "Paramètres mis à jour"
+msgstr "Paramètres mis à jour"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/widget_control.php:2
+msgid "Titre"
+msgstr "Titre"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/widget_control.php:3
+msgid "Nombre d'articles affichés"
+msgstr "Nombre d'articles affichés"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/widget_control.php:4
+msgid "Catégorie (facultatif)"
+msgstr "Catégorie (facultatif)"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/widget_control.php:17
+msgid "Aucune catégorie trouvée"
+msgstr "Aucune catégorie trouvée"
+
+#: E:\wamp\www\backup-18012012\wp-content\plugins\sidenails/widget_control.php:22
+msgid "Tag (facultatif)"
+msgstr "Tag (facultatif)"
+
