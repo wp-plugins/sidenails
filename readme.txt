@@ -3,7 +3,7 @@ Contributors: tranchesdunet
 Author: tranchesdunet (Jean-Marc Bianca)
 Author URI: http://www.tranchesdunet.com/
 Plugin URI: http://www.tranchesdunet.com/sidenails
-Tags: widget, thumbnail, last post, nextgen gallery, yarpp, sidebar
+Tags: widget, thumbnail, last post, nextgen gallery, yarpp, sidebar, picture, image, gallery
 Requires at least: 3.1
 Tested up to: 3.3
 Stable tag: 0.1
@@ -44,3 +44,8 @@ Feel free to test it and report any bugs/suggestions
 
 = 0.1 =
 * First public release
+
+= 0.2 =
+* Can now show a thumbnail of an image linked to a post, even if the post doesn't show this image
+* Can now show specific post, filtered by their ID
+* few bugs corrections

@@ -14,7 +14,7 @@ $ngg_thumbnail_height = $this->ngg_thumbnail_height;
   </div>
   <h2>SideNails <?php echo SIDENAILS_VERSION ?></h2>
   <br /> <br />
-  <?php _e("<b>SideNails</b> est un plugin qui vous permet d'afficher une liste des derniers articles de votre blog sous forme de vignettes, dans la side bar.<br />Pour cela, <b>SideNails</b> utilise les images attachés à votre article (vignette, mise en avant).", 'sidenails') ?>
+  <?php _e("<b>SideNails</b> est un plugin qui vous permet d'afficher une liste des derniers articles de votre blog sous forme de vignettes, dans la side bar.<br />Pour cela, <b>SideNails</b> utilise les images attachées à votre article (vignette, mise en avant).", 'sidenails') ?>
   <br /> <br />
   <form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
     <div class="metabox-holder has-right-sidebar">
@@ -28,8 +28,13 @@ $ngg_thumbnail_height = $this->ngg_thumbnail_height;
                 <?php _e("<b>SideNails</b> est un plugin développé par <a href='http://www.tranchesdunet.com/'>Jean-Marc BIANCA</a>", "sidenails") ?>
                 <br />
                 <ul><li><a href="http://www.tranchesdunet.com/sidenails"><?php _e("Support", "sidenails")?></a></li></ul>
-                <br /><br />
-                
+                <br />
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="RZRLGED6KXV9W">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+</form>
                 <?php echo "<p><label><input type='checkbox' value='1' name='show_credits'";
                       if($show_credits)
                       {
@@ -50,7 +55,7 @@ $ngg_thumbnail_height = $this->ngg_thumbnail_height;
             <?php _e('Images utilisées pour les vignettes', 'sidenails') ?>
             </h3>
             <div class="inside">
-            <?php _e("Par défaut, <b>SideNails</b> utilise la miniature de la 1ere image attachée à l'article, classé par '<i>Ordre du menu</i>' dans la galerie d''image (voir l''image ci-dessous)","sidenails");
+            <?php _e("Par défaut, <b>SideNails</b> utilise la miniature de la 1ere image attachée à l'article, classée par '<i>Ordre du menu</i>' dans la galerie d'images (voir l'image ci-dessous)","sidenails");
             echo "<br /><br />";
             echo "<img src='".WP_PLUGIN_URL."/sidenails/images/screenshot-ordre-menu-galerie.png' />";
             echo "<br /><br />";
@@ -108,7 +113,7 @@ $ngg_thumbnail_height = $this->ngg_thumbnail_height;
             </h3>
             <div class="inside">
             <?php
-            _e("La taille des vignettes est définie automatiquement :<br />- par vos réglages dans Wordpress pour les vignettes attachées à l'article et les images mise en avant, <br />- par vos réglages dans NextGen Gallery pour les vignettes de NextGen Gallery.<br />- les images venant de Custom Fields n'ont pas de taille par défaut.<br />Toutefois, vous pouvez modifier ici la taille des vignettes.","sidenails");
+            _e("La taille des vignettes est définie automatiquement soit :<br />- par vos réglages dans Wordpress pour les vignettes attachées à l'article et les images mise en avant, <br />- par vos réglages dans NextGen Gallery pour les vignettes de NextGen Gallery.<br />- les images venant de Custom Fields n'ont pas de taille par défaut.<br />Toutefois, vous pouvez modifier ici la taille des vignettes.","sidenails");
             echo " <b>".__("Attention, ces dimensions seront appliquées pour toutes les vignettes du plugin SideNails","sidenails")."</b>";
             echo "<br />";
             echo __("Largeur ","sidenails").": <input type='text' size=3 name='sidenails_thumb_width' value='".$sidenails_thumb_width."' />px<br />";
@@ -139,7 +144,7 @@ $ngg_thumbnail_height = $this->ngg_thumbnail_height;
       
           </div> -->
           <div class="submit">
-            <input type="submit" name="update_sidenailsSettings"
+            <input class="button-primary action" type="submit" name="update_sidenailsSettings"
               value="<?php _e('Mettre à jour', 'sidenails') ?>" />
           </div>
         </div>

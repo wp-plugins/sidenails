@@ -9,8 +9,7 @@
     echo "<option value=''> ---------- </option>";
     foreach($list_categorie as $cat)
     {
-      $selected  = (attribute_escape($sidenails_cat) == $cat->cat_name) ? "selected" : "";
-      echo "<option value='".$cat->cat_name."' ".$selected.">".$cat->cat_name."</option>";
+      echo "<option value='".$cat->cat_name."' ".selected($cat->cat_name, attribute_escape($sidenails_cat), false).">".$cat->cat_name."</option>";
     }
     echo "</select>";
   }else{
@@ -18,7 +17,7 @@
   }
 ?>
 </label></p>
-<p>ou</p>
+<p><?php _e("et/ou","sidenails");?></p>
 <p><label><?php _e("Tag (facultatif)", "sidenails") ?> : <input class="widefat" name="<?php echo $this->get_field_name('sidenails_tag'); ?>" type="text" value="<?php echo attribute_escape($sidenails_tag);?>" id="<?php echo $this->get_field_id('sidenails_tag'); ?>" onFocus="setSuggest('<?php echo $this->get_field_id('sidenails_tag'); ?>');" /></label></p>
-
-<?php //var_dump($list_categorie);?>
+<p><?php _e("et/ou","sidenails");?></p>
+<p><label><?php _e("ID de billets séparés par une virgule (ex: 8,12,324)","sidenails")?> : <input class="widefat" name="<?php echo $this->get_field_name('sidenails_posts'); ?>" type="text" value="<?php echo attribute_escape($sidenails_posts);?>" /></label></p>

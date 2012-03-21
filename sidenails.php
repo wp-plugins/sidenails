@@ -9,9 +9,12 @@
 
  === RELEASE NOTES ===
  2012-02-21 - v0.1 - First public release
+ 2012-03-07 - v0.2 - Suppression du filtre pour les attachments et post-thumbnails : permet d'afficher une vignette meme si l'image liée au post n'est pas DANS le post,
+ 											 correction de bugs divers
+ 											 Possibilité d'afficher directement une liste d'articles par leur ID
  */
 
-define("SIDENAILS_VERSION", "v0.1");
+define("SIDENAILS_VERSION", "v0.2");
 
 if (!class_exists("sidenails"))
 {
@@ -32,7 +35,7 @@ if (!class_exists("sidenails"))
       //recuperer les valeurs par defaut dans Wordpress
       $this->default_thumbnail_width = get_option("thumbnail_size_w");
       $this->default_thumbnail_height = get_option("thumbnail_size_h");
-      if(class_exists(nggdb))
+      if(class_exists("nggdb"))
       {
         $ngg_options = get_option("ngg_options");
         $this->ngg_thumbnail_width = $ngg_options['thumbwidth'];
@@ -160,13 +163,15 @@ if (!class_exists("sidenails"))
                                                             'sidenails_tag' => '',
                                                             'thumbnail_source' => 'attachment',
                                                             'sidenails_widget_title' => __("Derniers articles"),
+                                                            'sidenails_posts' => '',
                                                             'title' => '' ) );
-      //le parametre "title" sert uniquement pour mettre un titre customisé dans l'interface de gestion de widget
+      //le parametre "title" sert uniquement pour mettre un titre customisé dans l'interface de gestion de widget. Il DOIT s'appeler title, sinon ca marche pas :(
       $sidenails_nb_article = strip_tags($instance['sidenails_nb_article']);
       $sidenails_cat = strip_tags($instance['sidenails_cat']);
       $thumbnail_source = strip_tags($instance['thumbnail_source']);
       $sidenails_widget_title = strip_tags($instance['sidenails_widget_title']);
       $sidenails_tag = strip_tags($instance['sidenails_tag']);
+      $sidenails_posts = strip_tags($instance['sidenails_posts']);
       $title = $sidenails_widget_title;
       //retrouver la liste des categories
       $list_categorie = get_categories(array(	'type'                     => 'post',
@@ -199,6 +204,7 @@ if (!class_exists("sidenails"))
       }
       $instance['sidenails_cat'] = $new_instance['sidenails_cat'];
       $instance['sidenails_tag'] = strip_tags(trim($new_instance['sidenails_tag']));
+      $instance['sidenails_posts'] = strip_tags(trim($new_instance['sidenails_posts']));
       return $instance;
     }
 
@@ -305,13 +311,18 @@ if (!class_exists("sidenails"))
       $nbimages = apply_filters( 'sidenails_nb_article', $instance['sidenails_nb_article'] );
       $cat = apply_filters( 'sidenails_cat', $instance['sidenails_cat'] );
       $tag = apply_filters( 'sidenails_tag', $instance['sidenails_tag'] );
-      
+      $posts = apply_filters( 'sidenails_posts', $instance['sidenails_posts']);
+      if(trim($posts) && strlen(trim($posts)) > 0)
+      {
+        $posts = explode(",",$posts);
+      }
       $template = '';
       $request = array(
       'showposts'        => $nbimages,
       'category_name'    => $cat,
       'cat'              => '',
       'tag'              => $tag,
+      'post__in'				 => $posts,
       'author_name'      => '',
       'author'           => '',
       'orderby'          => 'post_date',
@@ -342,7 +353,7 @@ if (!class_exists("sidenails"))
       {
         case 'attachment':
         case 'post-thumbnails':
-          $filter = 'sidenails_search_where_attachment';
+          //$filter = 'sidenails_search_where_attachment';
           break;
         case 'ngg':
           $filter = 'sidenails_search_where_ngg';
