@@ -6,7 +6,7 @@ Plugin URI: http://www.tranchesdunet.com/sidenails
 Tags: widget, thumbnail, last post, nextgen gallery, yarpp, sidebar, picture, image, gallery
 Requires at least: 3.1
 Tested up to: 3.3
-Stable tag: 0.2
+Stable tag: 0.2.1
 
 SideNails allow you to display a list of the last posts with a thumbnail, in a widget. For this, SideNails use the images linked to your post (thumbnail, featured image, NextGen Gallery, etc.)
 
@@ -49,3 +49,5 @@ Feel free to test it and report any bugs/suggestions
 * Can now show a thumbnail of an image linked to a post, even if the post doesn't show this image
 * Can now show specific post, filtered by their ID
 * few bugs corrections
+= 0.2.1 =
+* version number fixed
