@@ -3,7 +3,7 @@
  Plugin Name: SideNails
  Plugin URI: http://www.tranchesdunet.com/sidenails
  Description: SideNails allow you to display a list of the last posts with a thumbnail, in a widget. For this, SideNails use the images linked to your post (thumbnail, featured image, NextGen Gallery, etc.)
- Version: 0.1
+ Version: 0.2
  Author: <a href="http://www.tranchesdunet.com/">Jean-Marc BIANCA</a>
  Author URI: http://www.tranchesdunet.com/sidenails
 
