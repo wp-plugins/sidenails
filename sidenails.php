@@ -3,7 +3,7 @@
  Plugin Name: SideNails
  Plugin URI: http://www.tranchesdunet.com/sidenails
  Description: SideNails allow you to display a list of the last posts with a thumbnail, in a widget. For this, SideNails use the images linked to your post (thumbnail, featured image, NextGen Gallery, etc.)
- Version: 0.1
+ Version: 0.2.1
  Author: <a href="http://www.tranchesdunet.com/">Jean-Marc BIANCA</a>
  Author URI: http://www.tranchesdunet.com/sidenails
 
@@ -12,9 +12,10 @@
  2012-03-07 - v0.2 - Suppression du filtre pour les attachments et post-thumbnails : permet d'afficher une vignette meme si l'image liée au post n'est pas DANS le post,
  											 correction de bugs divers
  											 Possibilité d'afficher directement une liste d'articles par leur ID
+ 2012-03-21 - v0.2.1 - Correction du numero de version
  */
 
-define("SIDENAILS_VERSION", "v0.2");
+define("SIDENAILS_VERSION", "v0.2.1");
 
 if (!class_exists("sidenails"))
 {
